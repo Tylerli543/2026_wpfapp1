@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2026_wpfapp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="1920" Width="1080" Background="Pink">
+    <Grid Margin="0,1,4,2" Width="1920" Height="1080">
+        <Label Content="Hello" HorizontalAlignment="Left" Margin="58,57,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label Content="好笑" HorizontalAlignment="Left" Margin="72,129,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FFCE1E1E"/>
+        <Label x:Name="name" Content="全名" HorizontalAlignment="Left" Margin="70,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.545" FontSize="36" Foreground="#FF633C3C"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Margin="180,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Height="47" TextChanged="TextBox_TextChanged" FontSize="36" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.637"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="phone" Content="電話" HorizontalAlignment="Left" Margin="72,282,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.545" FontSize="36" Foreground="#FF633C3C"/>
+        <TextBox x:Name="phoneTextBox" HorizontalAlignment="Left" Margin="180,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Height="47" TextChanged="TextBox_TextChanged" FontSize="36" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.035"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="ok" Content="確認" HorizontalAlignment="Left" Margin="493,278,0,0" VerticalAlignment="Top" Height="49" Width="157" Click="Button_Click" FontSize="36"/>
+        <Label x:Name="phone0" Content="電話" HorizontalAlignment="Left" Margin="72,282,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.545" FontSize="36" Foreground="#FF633C3C"/>
+        <TextBox x:Name="phone1" HorizontalAlignment="Left" Margin="180,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="47" TextChanged="TextBox_TextChanged" FontSize="36" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.035"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="輸入一個數" Content="輸入一個數" HorizontalAlignment="Left" Margin="75,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.545" FontSize="36" Foreground="#FF633C3C"/>
+        <TextBox x:Name="輸入一個數1" HorizontalAlignment="Left" Margin="279,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Height="47" TextChanged="TextBox_TextChanged" FontSize="36" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.035"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="ans1" HorizontalAlignment="Left" Height="222" Margin="90,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="905" Foreground="#FFFF8B8B" Background="#FF798033" FontSize="10"/>
+        <Button x:Name="確認" Content="確認" HorizontalAlignment="Left" Height="47" Margin="490,356,0,0" VerticalAlignment="Top" Width="162" Click="Button_Click_1" FontSize="36"/>
 
     </Grid>
 </Window>
